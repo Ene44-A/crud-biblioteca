@@ -1,0 +1,27 @@
+:root {
+    --color-primary: #0184A0;
+    --color-secondary: #0b516f;
+    --color-tertiary: #35b7d1;
+
+    --color-primario:#FC8F24;
+    --color-secundario:#cc741c;
+    --color-terciario:#fda853;
+}
+
+.btn-amigo{
+    background-color: var(--color-primary);
+    color: #fff;
+}
+.btn-amigo:hover{
+    background-color: var(--color-tertiary);
+    color: #d6fcff;
+}
+.btn-luis{
+    background-color: var(--color-primario);
+    color: #fff;
+}
+.btn-luis:hover{
+    background-color: var(--color-terciario);
+    color: #fff7d6;
+
+}
