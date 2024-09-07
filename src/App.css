@@ -25,3 +25,22 @@
     color: #fff7d6;
 
 }
+
+.state{
+    display: inline-block;  /* Permite que se comporten como bloques en línea */
+    width: 16px;           /* Ancho del círculo */
+    height: 16px;          /* Alto del círculo */
+    border-radius: 50%; /*    Hace que el elemento sea un círculo */
+    margin: 10px 10px 0 0;
+}
+.state-bar{
+    display: inline-block;  /* Permite que se comporten como bloques en línea */
+    width: 100%;           /* Ancho del círculo */
+    height: 6px;          /* Alto del círculo */
+}
+.s-true{
+    background-color: #75da22;  /* Color verde */
+}
+.s-false{
+    background-color: #dd0404;  /* Color verde */
+}

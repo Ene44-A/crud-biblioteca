@@ -41,7 +41,7 @@ const ViewEdit = () => {
                         <div className="row">  
                             {
                              libro &&   
-                                <ContainerEditArticle libro={libro}/>
+                                <ContainerEditArticle libro={libro} stateBook={libro.disponible}/>
                             }
                         </div>
                     </main>

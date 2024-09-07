@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { db } from "../fireBase/config";
 import Navbar from "./Navbar";
+import PedirLibro from "../logic/PedirLibro";
+import HistorialLibro from "../logic/HistorialLibro";
 
 const DetalleLibro = () => {
 
@@ -45,7 +47,7 @@ const DetalleLibro = () => {
                         <div className="row">  
                         {
                             libro &&
-                            <div className="card shadow-sm mb-3 p-2" style={{maxWidth:'740px'}}>
+                            <div className="card shadow-sm mb-3 p-2 col-8" >
                                 <div className="row g-0">
                                     <div className="col-md-4">
                                         <img src={libro.imagen} className="img-fluid rounded-start" alt="..."/>
@@ -66,10 +68,17 @@ const DetalleLibro = () => {
                                                 Editar
                                             </Link>
                                         </button>
+                                    <h5 className="mx-4">{libro.id}</h5>
                                     </div>
                                 </div>
                             </div>
                         }
+                        <div className="col-4">
+                            <HistorialLibro />
+                        </div>
+                        </div>
+                        <div className="col-8 shadow-sm">
+                            <PedirLibro libro={libro}/>
                         </div>
                     </main>
                 </div>

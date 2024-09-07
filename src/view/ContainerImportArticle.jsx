@@ -44,7 +44,8 @@ const ContainerImportArticle = () => {
                 descripcion: data.descripcion,
                 imagen: fileUrl,
                 fecha: fechaActual.fecha,
-                hora: fechaActual.hora
+                hora: fechaActual.hora,
+                disponible:true
             };
             const docRef = await addDoc(booksCollectionRef, dataBook);
             console.log("Document written with ID: ", docRef.id);

@@ -18,7 +18,6 @@ const ContainerShowArticle = () => {
             }))
         });
     }, []);
-    console.log(libros);
     
     return (
         <div>
@@ -35,6 +34,11 @@ const ContainerShowArticle = () => {
                                             <h5 className="card-title">{libro.nombre}</h5>
                                             <p className="card-text">{libro.descripcion}</p>
                                         </div>
+                                        {
+                                            libro.disponible === true
+                                            ?<span className="state-bar s-true"></span>
+                                            :<span className="state-bar s-false"></span>
+                                        }
                                         <div className="card-footer text-body-secondary">
                                             <button className="btn btn-amigo">
                                                 <Link to={`/libro/${libro.id}`} style={{ color:'#fff',textDecoration:'none' }}>
